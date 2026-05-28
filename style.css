@@ -1,75 +1,179 @@
-/* Глобальні налаштування */
-body {
-    background-color: #000000 !important;
-    color: #ffffff !important;
+.android-auth-container {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f 0%, #111119 100%);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 10000;
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-/* Картки */
-.glass-card {
-    background: rgba(255, 255, 255, 0.05) !important;
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 24px;
-    padding: 25px;
-    margin: 20px;
+.auth-card {
     text-align: center;
+    color: white;
 }
 
-/* Заголовки */
-h1, h2 {
-    color: #ffffff !important;
+.auth-card h2 {
     font-family: 'Comfortaa', cursive;
+    margin-bottom: 10px;
+    font-size: 2rem;
 }
 
-.counter-title {
-    color: #a4b0be !important;
-    font-size: 1rem;
+.auth-card p {
+    color: #a4b0be;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
+
+/* Контейнер для сітки та ліній */
+.pattern-wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    touch-action: none; /* Блокує жест скролу сторінки на телефонах */
+}
+
+#pattern-canvas {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 5;          /* Канвас має бути ЗВЕРХУ, щоб малювати лінії */
+    pointer-events: none; /* АЛЕ події мишки мають проходити КРІЗЬ нього на сітку точок */
+}
+
+.pattern-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%; height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+/* Робимо самі зони точок більшими, щоб по них було легше влучити пальцем */
+.pattern-node {
+    display: flex; justify-content: center; align-items: center;
+    width: 100%; height: 100%;
+    background: transparent;
+    -webkit-tap-highlight-color: transparent; /* Прибирає синій спалах на Android при тапі */
+}
+
+/* Маленька точка по центру */
+.dot {
+    width: 14px; height: 14px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+/* Стан, коли точка активована (провели пальцем) */
+.pattern-node.active .dot {
+    background-color: #fd79a8;
+    transform: scale(1.5);
+    box-shadow: 0 0 15px #fd79a8, 0 0 30px #fd79a8;
+}
+
+/* Пульсація навколо точки при активації */
+.pattern-node.active {
+    background: rgba(253, 121, 168, 0.08);
+    border-radius: 50%;
+}
+
+.error-text {
+    color: #ff7675;
+    margin-top: 25px;
+    font-weight: 500;
+}
+.hidden { display: none !important; }
+
+.date-container {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.date-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #a4b0be;
+    margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 15px;
-}
-
-/* Дата знайомства */
-.date-container {
-    margin-bottom: 30px;
 }
 
 .date-highlight {
     font-family: 'Comfortaa', cursive;
     font-size: 2.2rem;
     color: #fd79a8;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-/* Лічильник */
+.time-highlight {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.counter-title {
+    font-size: 1.1rem;
+    color: #dfe6e9;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 .counter-container {
     display: flex;
     justify-content: center;
-    gap: 8px;
-    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .counter-box {
-    background: rgba(253, 121, 168, 0.1);
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 10px 5px;
     border-radius: 12px;
-    min-width: 50px;
+    min-width: 55px;
 }
 
 .counter-box span {
-    display: block;
     font-family: 'Comfortaa', cursive;
-    font-size: 1.2rem;
-    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
 }
 
 .counter-box label {
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.6rem;
-    color: #fd79a8;
+    color: #b2bec3;
+    margin-top: 4px;
     text-transform: uppercase;
 }
 
-.hidden { display: none !important; }
+/* Робимо заголовок і текст лічильника чіткими */
+.counter-title {
+    color: #ffffff !important; /* Білий колір для тексту */
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Легка тінь для контрасту */
+}
+
+.counter-box span {
+    color: #ffffff !important; /* Цифри — білі */
+}
+
+.counter-box label {
+    color: #fd79a8 !important; /* Рожевий колір для назв (днів, годин...), щоб було гарно видно */
+    font-weight: bold;
+}
+
+/* Якщо фон сторінки занадто світлий, зробимо картку темнішою */
+.glass-card {
+    background: rgba(0, 0, 0, 0.6) !important; /* Темний напівпрозорий фон картки */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
