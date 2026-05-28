@@ -14,11 +14,10 @@
     <div id="auth-screen" class="android-auth-container">
         <div class="auth-card">
             <h2>Вхід для Софії</h2>
-            <p>Намалюй графічний ключ (наш пароль), щоб увійти</p>
+            <p>Намалюй графічний ключ, щоб увійти</p>
             
             <div class="pattern-wrapper">
                 <canvas id="pattern-canvas"></canvas>
-                
                 <div class="pattern-grid" id="pattern-grid">
                     <div class="pattern-node" data-index="1"><div class="dot"></div></div>
                     <div class="pattern-node" data-index="2"><div class="dot"></div></div>
@@ -51,19 +50,25 @@
 
         <section class="timeline-section">
             <div class="timeline">
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <div class="image-box"><img id="photo-1" src="" alt="Спогад 1"></div>
-                        <h3>Початок історії ✨</h3>
-                    </div>
-                </div>
-                </div>
+                <div class="timeline-item"><div class="image-box"><img id="photo-1" src="" alt="Спогад 1"></div></div>
+                <div class="timeline-item"><div class="image-box"><img id="photo-2" src="" alt="Спогад 2"></div></div>
+                <div class="timeline-item"><div class="image-box"><img id="photo-3" src="" alt="Спогад 3"></div></div>
+                <div class="timeline-item"><div class="image-box"><img id="photo-4" src="" alt="Спогад 4"></div></div>
+                <div class="timeline-item"><div class="image-box"><img id="photo-5" src="" alt="Спогад 5"></div></div>
+                <div class="timeline-item"><div class="image-box"><img id="photo-6" src="" alt="Спогад 6"></div></div>
+                <div class="timeline-item"><div class="image-box"><img id="photo-7" src="" alt="Спогад 7"></div></div>
+                <div class="timeline-item"><div class="image-box"><img id="photo-8" src="" alt="Спогад 8"></div></div>
+            </div>
         </section>
         
         <section class="interactive-section">
-            <div class="glass-card id="final-card">
+            <div class="glass-card" id="final-card">
                 <div class="final-image-wrapper"><img id="photo-final" src="" class="final-photo"></div>
                 <h2>Це взаємно! ❤️</h2>
+                <div id="quiz-card">
+                    <button id="final-yes">Так</button>
+                    <button id="final-no">Ні</button>
+                </div>
             </div>
         </section>
     </div>
