@@ -112,6 +112,7 @@ function handleEnd() {
     isTracking = false;
     
     const userPattern = activeNodes.map(n => n.getAttribute('data-index')).join('');
+    console.log("Введений Софією ключ:", userPattern);
     const url1 = decrypt(ENCRYPTED_PHOTOS[0], userPattern);
     
     if (url1 && url1.startsWith('http')) {
