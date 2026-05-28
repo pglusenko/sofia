@@ -30,14 +30,15 @@
     width: 300px;
     height: 300px;
     margin: 0 auto;
+    touch-action: none; /* Блокує жест скролу сторінки на телефонах */
 }
 
 #pattern-canvas {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    z-index: 1;
-    pointer-events: none; /* Щоб тачі проходили крізь канвас на кнопки */
+    z-index: 5;          /* Канвас має бути ЗВЕРХУ, щоб малювати лінії */
+    pointer-events: none; /* АЛЕ події мишки мають проходити КРІЗЬ нього на сітку точок */
 }
 
 .pattern-grid {
@@ -49,10 +50,12 @@
     z-index: 2;
 }
 
-/* Самі великі круглі зони для натискання */
+/* Робимо самі зони точок більшими, щоб по них було легше влучити пальцем */
 .pattern-node {
     display: flex; justify-content: center; align-items: center;
-    cursor: pointer;
+    width: 100%; height: 100%;
+    background: transparent;
+    -webkit-tap-highlight-color: transparent; /* Прибирає синій спалах на Android при тапі */
 }
 
 /* Маленька точка по центру */
