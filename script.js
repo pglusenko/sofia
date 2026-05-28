@@ -172,13 +172,42 @@ function decryptDoubleBase64(doubleBase64Text, key) {
 // Лічильник знайомства (26 лютого 2026 року)
 const startDate = new Date(2026, 1, 26, 23, 04); 
 function updateCounter() {
-    const now = new Date(); const diff = now - startDate;
-    document.getElementById('days').innerText = Math.floor(diff / (1000*60*60*24));
-    document.getElementById('hours').innerText = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
-    document.getElementById('minutes').innerText = Math.floor((diff % (1000*60*60)) / (1000*60));
-    document.getElementById('seconds').innerText = Math.floor((diff % (1000*60)) / 1000);
+    const now = new Date();
+    
+    // Розрахунок різниці в роках та місяцях
+    let years = now.getFullYear() - startDate.getFullYear();
+    let months = now.getMonth() - startDate.getMonth();
+    let days = now.getDate() - startDate.getDate();
+
+    if (days < 0) {
+        months--;
+        // Отримуємо кількість днів у попередньому місяці
+        let prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+        days += prevMonth.getDate();
+    }
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+
+    // Розрахунок годин, хвилин, секунд для залишку часу
+    let diff = now - new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 4);
+    if (diff < 0) diff += 24 * 60 * 60 * 1000; // якщо день ще не закінчився
+
+    const hours = Math.floor(diff / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    // Оновлення DOM
+    document.getElementById('months').innerText = months;
+    document.getElementById('days').innerText = days;
+    document.getElementById('hours').innerText = hours;
+    document.getElementById('minutes').innerText = minutes;
+    document.getElementById('seconds').innerText = seconds;
 }
 
+setInterval(updateCounter, 1000);
+updateCounter();
 const noBtn = document.getElementById('final-no');
 function escape() {
     const x = Math.random() * (window.innerWidth - 120);
