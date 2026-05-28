@@ -1,3 +1,133 @@
+/* ===== DARK BACKGROUND ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(160deg, #0d0d1a 0%, #111119 50%, #0f0f1e 100%);
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main-content {
+    background: transparent;
+}
+
+.hero-section {
+    padding: 40px 20px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 30px 25px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    width: 100%;
+    max-width: 420px;
+    color: white;
+}
+
+.timeline-section {
+    padding: 20px 0 30px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.timeline-item {
+    width: 100%;
+    max-width: 420px;
+}
+
+.image-box {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.interactive-section {
+    padding: 10px 20px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.final-photo {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 15px;
+}
+
+.final-image-wrapper {
+    margin-bottom: 10px;
+}
+
+#final-card h2 {
+    color: #fd79a8;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+#quiz-card {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#final-yes, #final-no {
+    padding: 12px 32px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#final-yes {
+    background: linear-gradient(135deg, #fd79a8, #e84393);
+    color: white;
+    box-shadow: 0 4px 20px rgba(253, 121, 168, 0.4);
+}
+
+#final-yes:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(253, 121, 168, 0.6);
+}
+
+#final-no {
+    background: rgba(255, 255, 255, 0.1);
+    color: #b2bec3;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ===== END DARK BACKGROUND ===== */
+
 .android-auth-container {
     position: fixed;
     top: 0; left: 0; width: 100vw; height: 100vh;
