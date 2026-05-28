@@ -1,16 +1,16 @@
 // =================================================================
-// 1. ОНОВЛЕНИЙ МАСИВ (ПОВНІСТЮ ВАЛІДНИЙ)
+// 1. НАДІЙНИЙ BASE64 МАСИВ (БЕЗ СПОТВОРЕННЯ СИМВОЛІВ)
 // =================================================================
 const ENCRYPTED_PHOTOS = [
-  "Uzd\bR{t[x\u0004wZuZjUz^nAW||Fc\u0005\fBh\u0004@]WayYW_xNS]k[WZcCa\u0003\nM}a~uUpR_t\\ovgr~yj\nG{`egBeucyV\u0006ANb\u0002WvyXPHSVwd]Ycc|_\ttWq[baH^\u000beYUAP|xsn\\}Tn\u0005C\u0002x\b\u0004U[Y]l~a~Yglq^nepuRwl\u0003PqV[m\u0001iz{`DHcScwop\u0004E~n~xV|[ZW\\`ufkob`\u0006^|m\u0000eUyYD\\d\bwU]\u0007sgj\u0004TKg\n}Qtw\fde{\u0007Q\u0007\u0002ndPNTabEapw\\o^@f~v\u0007dmxnw`pbIUf`aZ\u0007a]WKyO~BRAdIkVL\\_FnP\u0000zXwLRJ\bBWM\u0003XZbfCeXr\u0003RY\u0002Z\u0005cMxbvt~x\n\b",
-  "Uzd\bR{t[x\u0004wZuZjUz^nAW||Fc\u0005\fBh\u0004@]WayYW_xNS]k[WZcCa\u0003\nM}a~uUpR_t\\ovgr~yj\nGzU^lb}fwfQ\u0004FOwvKaycbAc\b\\c[gBbrheP\u0006AW\u0002\u000e\fUX\fro|ZZn\\[\rS}q\u0002RS{ZorE{bPAi|[\u0007`zp^cflNb`hbjgeRdOvWV^\u0002XrEZarPG~\buCUeN^}dkxQ\u0004`fYu[cbDweVgRm\u0004^Marrym_mW\\|Th\u0001MxQ]\u0003Dm]u_z^\u0001kWVsg``\u0000a}antRSuby^|iSI^\u0006P|wLuyWm`~|lAdIkV\u0007|LuER}rByHwLRJ\bBWM\u0003XZbfCeXr\u0003RY\u0002Z\u0005cMxbvt~x\n\b",
-  "Uzd\bR{t[x\u0004wZuZjUz^nAW||Fc\u0005\fBh\u0004@]WayYW_xNS]k[WZcCa\u0003\nM}a~uUpR_t\\ovgr~yj\nGzb\u0000UBRwsQgcg\u0003kvC\bTXD\u0007xpstj\u0005\u0000vSZ\\\u0005}qa_y_QAhdwdcaNmy_\tar~cRSY}ZcQ]f]Lxal\u0006cV\u0002N\fT^\u0000^gNx\u0000ui}nfmfaR\u000bcBvag[hsrPPlaTVjRPTuo|fqwB\\tP\u000bSqnwel]\u0000wp^@VnHPf\ny\u0004Uv^\fgto[aaF]ly_r`^\ryoVt[swc`[@sRWeTfv]BRkxCWlxrY\\[QmcXckdIkV\u0001|b_ER}TM{a\u0007B}d\fAycVBre}~nmb\u0002WpgIco|X\u0006iF",
-  "Uzd\bR{t[x\u0004wZuZjUz^nAW||Fc\u0005\fBh\u0004@]WayYW_xNS]k[WZcCa\u0003\nM}a~uUpR_t\\ovgr~yj\nGee_RaS\u0002{rTrhpmvfMVc}Fx}^\u0000\\stLg~rwf\u000bS_mgdw|XI}`a|YZZe`[rBc~szZg\u0004P[@kiTSD{vR{Tk{dP_Z|ZuqjcrDug\bI`]Zl\u0005c\u0006P\u0000b\bqlm_E\nUw]CgXt}meuwSXbtW}\u0004coZgcPsWEQU_lce\u0007ne\u0000QBWNVgm\u0000~AS\u0006DZlnU`b\r\u0000gLbC}|SmVYA\u000bP\u0000kaza|^Y\u0001[Oeb\rBckdIkV\u0007|LuER}rByHwLRJ\bBWM\u0003XZbfCeXr\u0003RY\u0002Z\u0005cMxbvt~x\n\b",
-  "Uzd\bR{t[x\u0004wZuZjUz^nAW||Fc\u0005\fBh\u0004@]WayYW_xNS]k[WZcCa\u0003\nM}a~uUpR_t\\ovgr~yj\nGez\\ZSdIl\u0007gYZA]Z\u0002tdq\\pdVw\u0003\\`V\u0006d\u0006@wbov\u0004fgRuS{ktm\u0005Vnm\u0000[OS_r]`}gxla`Ld\u0004n\u0004gS}cfYxU`I`\u0007cZpyl]Wro\u0005nAWSUIkpgkXnkfTe\\e\u0001]Lef\f\u0007abdYifWTn\u0007\u0001vUTgEob\fccZzG|aub`a\u0007{gv\b\u0003g_\u0003pj_yWUr\u0000Kd\ngvhYpMP\u0007\\t~TXMy\u0002\u000freuQQQ`U\u0006keW\bU\u0005z\u0000ckdIkV\u0007|LuER}rByHwLRJ\bBWM\u0003XZbfCeXr\u0003RY\u0002Z\u0005cMxbvt~x\n\b",
-  "Uzd\bR{t[x\u0004wZuZjUz^nAW||Fc\u0005\fBh\u0004@]WayYW_xNS]k[WZcCa\u0003\nM}a~uUpR_t\\ovgr~yj\nGzy^RhRtU{f\u0006\u000bfviyCyf\u0005Kc}\u0005Jn`g}V~\\kiT_nHs\fRIcOoX|a\\vePmb@San{Ymb^Nf~re`qS\\`e]\fS\u0003\f[xNZ~m[}QU\u0006XHxm\u0004C]\u0007\u0004~QrjxjmzAVdRi`^\r\u0003g_dpkuP@UraEUVsE]M]\u0001`Z~\u0002~qT\u0006Vj|Pd\u0001\u0000dTrw\u0006uw[JzcrtRm\u0004vXcs\\P`TrRamsxjxw`Ygxc\u0003uaf\u0006\tmrb_lAdIkV\u0001|b_ER}TM{a\u0007B}d\fAycVBre}~nmb\u0002WpgIco|X\u0006iF",
-  "Uzd\bR{t[x\u0004wZuZjUz^nAW||Fc\u0005\fBh\u0004@]WayYW_xNS]k[WZcCa\u0003\nM}a~uUpR_t\\ovgr~yj\nGeWw\u000fIS^c\u0006cNtdjvKSzf\u0005\u0007R\tAqXwvhqW\u0003fmu_gvU@bXpOTs]\u0002b_iRn`bqS|Zhcc{Wq\u0000\u0005d}azngZ\rdYsXa_\u000bFYy}hT^D^Rt\u0000[q\fsrvuaz\u0001Wg`VR^s{V_xzifWsf\u0005PEdURIkp\u0004anj[fWTAl\u0002x~dtMnxlQ\u0004nKTMTmnGSSAEX\u0007R\u0000Ws~DfqbBQ_\u000fd`\b\u0007{Z|[l\\T@bbnbgkdIkV\u0001|b_ER}TM{a\u0007B}d\fAycVBre}~nmb\u0002WpgIco|X\u0006iF",
-  "Uzd\bR{t[x\u0004wZuZjUz^nAW||Fc\u0005\fBh\u0004@]WayYW_xNS]k[WZcCa\u0003\nM}a~uUpR_t\\ovgr~yj\nG{mec\tRd\f}`Nt\u0002o_[hdX@uUg\u0005XaEq}cP\u0001~oSGbYNjd]]alpoYw}mxqPvc\n\u0004ynbQ[c\u0005\\\u0001e|GTUXp\u000ec_sAc_cNvKye[WFbU\u0004^XqR[vGb\u000b}weXxaR\u0003|NgZB[o_T@c\u0004W\u0007ln]YXpMy}cTdVoqond|\u000e`f\u0001W\u0004\u0003^k\\}rzXz\u0007`\t{Uvbs`S\u0004r\u0002RCSFz\u0001{BctQAybx[Y][UbX\u0001\\lAdIkV\u0007|LuER}rByHwLRJ\bBWM\u0003XZbfCeXr\u0003RY\u0002Z\u0005cMxbvt~x\n\b",
-  "Uzd\bR{t[x\u0004wZuZjUz^nAW||Fc\u0005\fBh\u0004@]WayYW_xNS]k[WZcCa\u0003\nM}a~uUpR_t\\ovgr~yj\nGefjlwSdkrTqt\u0007vZeIRaX@o\nc|wbYeQr\\Gf\u000bal`\u0002|JS^J@{r^zo_CmVO~XT\u0004\u0007nbc@s~\u0000}Ra`z\u0001l{`Imgl`Ga\u0001\\Ccanq`Twha{zPprbaRnLPtlHTf\br{`t_l\\GWf`\\h{n{klbQpS\\uHfle\u0006U\u0003\u000ftg\u0003pdNh@afeUc\u0005\\TelsRw`dN\u0005u\u0001eU\u000e_aXdmdd]ElY\u000b[ady\rRYzkgkdIkV\u0007|LuER}rByHwLRJ\bBWM\u0003XZbfCeXr\u0003RY\u0002Z\u0005cMxbvt~x\n\b"
+  "VXpkCFJ7dFt4BHdadVpqVXpebkFXfHxGYwUMQmgEQF1XYXlZV194TlNda1tXWmNDYQMKTX1hfnVVcFJfdFxvdmdyfnlqCkd7YGVnQmV1Y3lWBkFOYgJXdnlYUEhTVndkXVljY3xfCXRXcVtiYUheC2VZVUFQfHhzblx9VG4FQwJ4CARVW1ldbH5hfllnbHFebmVwdVJ3bANQcVZbbQFpentgREhjU2N3b3AERX5ufnhWfFtaV1xgdWZrb2JgBl58bQBlVXlZRFxkCHdVXQdzZ2oEVEtnCn1/UXR3DGRlewdRB38CbmRQTlRhYkVhcHd/XG9eQGZ+dgdkf214bndgcGJJVWZgYVoHYV1XS3lPfkJSQWRJa39WTH9cX0Z/blAAelh3TFJKCEJXTQNYWmJmQ2VYcgNSf1kCWgVjTXhidnR+eAoI",
+  "VXpkCFJ7dFt4BHdadVpqVXpebkFXfHxGYwUMQmgEQF1XYXlZV194TlNda1tXWmNDYQMKTX1hfnVVcFJfdFxvdmdyfnlqCkd6VV5sYn1md2ZRBEZPd3ZLYXljYkFjCH9cY1tnQn9icmhlUAZBVwIODFVYDHJvfFpablxbDVN9cQJSU3tab3JFe39iUEFpfFsHYHpwXmNmbE5iYGhiamdlUmRPdn9XVl4CWHJFWmFyUEd+CHVDVWVOXn1ka3hRBGBmWXVbf2NiRHdlVmdSbQReTWFycnl/bV9tV1x8VGgBTXhRXQNEbV11X3peAWtXVnNnYGAAYX1hbnRSU3VieV58aVNJXgZQfHdMdXlXf21gfnxsQWRJa39WB3xMdUVSfXJCeUh3TFJKCEJXTQNYWmJmQ2VYcgNSf1kCWgVjTXhidnR+eAoI",
+  "VXpkCFJ7dFt4BHdadVpqVXpebkFXfHxGYwUMQmgEQF1XYXlZV194TlNda1tXWmNDYQMKTX1hfnVVcFJfdFxvdmdyfnlqCkd6YgBVQlJ3c1FnY2cDa3ZDCFRYRAd4cHN0agUAdlNaXAV9cWFfeV9RQWhkd2RjYX9ObXlfCWFyfmNSU1l9WmNRXWZdTHhhbAZjVgJODFReAF5nTngAdWl9bmZtZmFSC2NCdmFnW2hzclBQbGFUVmpSUFR1b3xmcXdCXHRQC1NxbndlbF0Ad3BeQFZuSFBmCnkEVXZeDGd0b1thYUZdbHlfcmBeDXlvVn90W3N3Y2BbQHNSV2VUZnZdQlJreENXbHhyWVxbUW1jWH9ja2RJa39WAXxiX0VSfVRNe2EHQn1kDEF5Y1ZCcmV9fm5tYgJXcGdJY298WH8GaUY=",
+  "VXpkCFJ7dFt4BHdadVpqVXpebkFXfHxGYwUMQmgEQF1XYXlZV194TlNda1tXWmNDYQMKTX1hfnVVcFJfdFxvdmdyfnlqCkdlZV9SYVMCe3JUcmhwbXZmTVZjfUZ4fV4AXHN0TGd+cndmC1NfbWdkd3xYSX1gYXxZWlplf2BbckJjfnN6Wn9nBFBbQGtpVFNEe3ZSe1Rre2RQX1p8WnVxamNyRHVnCElgXVpsBWMGUABiCHFsbV9FClV3XUNnWHR9bWV1d1NYYnRXfQRjb1pnY1BzV0VRVV9sY2UHbmUAUUJXTlZnbQB+QVMGRFpsbn9VYGINAGdMYkN9fFNtVllBC1AAa2F6YXxeWQFbT2ViDUJja2RJa39WB3xMdUVSfXJCeUh3TFJKCEJXTQNYWmJmQ2VYcgNSf1kCWgVjTXhidnR+eAoI",
+  "VXpkCFJ7dFt4BHdadVpqVXpebkFXfHxGYwUMQmgEQF1XYXlZV194TlNda1tXWmNDYQMKTX1hfnVVcFJfdFxvdmdyfnlqCkdlelxaU2RJbAdnWVpBXVoCdGRxXHBkVncDXGBWBmQGQHdib3YEZmdSdVN7a3RtBVZubQBbT1Nfcl1gfWd4bGFgTGQEbgRnU31jZll4VWBJYAdjWnB5bF1Xcm8FbkFXU1VJa3B/Z2tYbmtmVGVcZQFdTGVmDAdhYmRZaWZXVG4HAXZVVGdFb2IMY2Naekd8YXViYGEHe2d2CANnXwNwal95V1VyAEtkCmd2aFlwTVAHXHR+VFhNeQIPcmV1UVFRYFUGa2VXCFUFegBja2RJa39WB3xMdUVSfXJCeUh3TFJKCEJXTQNYWmJmQ2VYcgNSf1kCWgVjTXhidnR+eAoI",
+  "VXpkCFJ7dFt4BHdadVpqVXpebkFXfHxGYwUMQmgEQF1XYXlZV194TlNda1tXWmNDYQMKTX1hfnVVcFJfdFxvdmdyfnlqCkd6eV5SaFJ0VXtmBgtmdml5Q3lmBUtjfQVKbmBnfVZ+XGtpVF9/bkhzDFJJY09vWHxhXHZlUG1iQFNhbntZbWJeTmZ+cmVgcVNcYGVdDFMDDFt4Tlp+bVt9UVUGWEh4bQRDXQcEflFyanhqbXpBVmRSaWBeDQNnX2Rwa3VQQFVyYUVVVnNFXU1dAWBafgJ+cVQGVmp8UGQBAGRUcncGdXdbSnpjcnRSbQR2WGNzXFBgVHJSYW1zeGp4d2BZf2d4YwN1YWYGCW1yYl9sQWRJa39WAXxiX0VSfVRNe2EHQn1kDEF5Y1ZCcmV9fm5tYgJXcGdJY298WH8GaUY=",
+  "VXpkCFJ7dFt4BHdadVpqVXpebkFXfHxGYwUMQmgEQF1XYXlZV194TlNda1tXWmNDYQMKTX1hfnVVcFJfdFxvdmdyfnlqCkdlV3cPSVNeYwZjTnRkanZLU3pmBQdSCUFxWH93dmhxVwNmbXVfZ3ZVQGJYcE9Uc10CYl9pUm5gYnFTfH9aaGNje1dxAAVkfWF6bmdaDWRZc1hhXwtGWXl9aFReRF5Sf3QAW3EMc39ydnVhf3oBV2dgVlJec3tWX3h6aWZXc2YFUEVkVVJJa3B/BGFualtmV1RBbAJ4fmR0TW54bFEEbktUTVRtbkdTU0FFWAdSAFdzfkRmcWJCUV8Pf2RgCAd7WnxbbFxUQGJibmJna2RJa39WAXxiX0VSfVRNe2EHQn1kDEF5Y1ZCcmV9fm5tYgJXcGdJY298WH8GaUY=",
+  "VXpkCFJ7dFt4BHdadVpqVXpebkFXfHxGYwUMQmgEQF1XYXlZV194TlNda1tXWmNDYQMKTX1hfnVVcFJfdFxvdmdyfnlqCkd7bWVjCVJkDH1gTnQCb19baGRYQHVVf2cFWGFFcX1jUAF+b1NHYllOamRdf11hbHBvWXd9bXhxUHZjCgR5bmJRW2MFXAFlfEdUVVhwDmNfc0FjX2NOdkt5f2VbV0ZiVQReWHF/Un9bdkdiC313ZVh4YVIDfE5nWkJbb19UQGMEVwdsbl1ZWHBNeX1jVGRWb3FvbmR8DmBmfwFXBANea1x9cnpYegdgCXtVdmJzYFMEcgJSQ1NGegF7QmN0UUF5YnhbWV1bVWJYAVxsQWRJa39WB3xMdUVSfXJCeUh3TFJKCEJXTQNYWmJmQ2VYcgNSf1kCWgVjTXhidnR+eAoI",
+  "VXpkCFJ7dFt4BHdadVpqVXpebkFXfHxGYwUMQmgEQF1XYXlZV194TlNda1tXWmNDYQMKTX1hfnVVcFJfdFxvdmdyfnlqCkdlZmpsd1Nka3JUcXQHdlplSVJhWEBvCmN8d2JZZVFyXEdmC2FsYAJ8SlNeSkB7cl56b19DbVZPflhUfwQHbmJjQH9zfgB9UmFgegFse2BJf21nbGBHYQFcQ2NhbnFgVHd/aGF7elBwcmJhUm5MUHRsSFRmCHJ7YHRfbFxHV2ZgXGh7bntrbGJRcFNcdUhmbGUGVQMPdGcDf3BkTmhAYWZlVWMFXFRlbHNSd2BkTn8FdQFlVQ5fYVhkbWRkXUVsWQtbYWR5DVJZemtna2RJa39WB3xMdUVSfXJCeUh3TFJKCEJXTQNYWmJmQ2VYcgNSf1kCWgVjTXhidnR+eAoI"
 ];
 
 let activeNodes = [];
@@ -86,7 +86,7 @@ function handleMove(e) {
     drawLines(clientX, clientY);
 }
 
-// РАДІУС ЗАХВАТУ ЦЕНТРУ ТОЧОК
+// 🎯 ЗМЕНШЕНИЙ РАДІУС ЗАХВАТУ (Точно 15px, без випадкових збоїв)
 function getNodeFromPoint(x, y) {
     const CAPTURE_RADIUS = 15; 
     for (let node of nodes) {
@@ -101,28 +101,22 @@ function getNodeFromPoint(x, y) {
     return null;
 }
 
-// ПЕРЕВІРКА ПРИ ВІДПУСКАННІ ПАЛЬЦЯ
 function handleEnd(e) {
     if (!isTracking) return;
     isTracking = false;
     
-    let userPattern = activeNodes.map(n => n.getAttribute('data-index')).join('');
+    const userPattern = activeNodes.map(n => n.getAttribute('data-index')).join('');
     console.log("Введений Софією ключ:", userPattern);
     
-    // АВТОМАТИЧНА КОРЕКЦІЯ: Якщо вона веде палець за логічним паттерном 426813975,
-    // скрипт автоматично виправляє його на ключ шифрування (426813795)
-    if (userPattern === "426813975") {
-        userPattern = "426813795";
-    }
-    
-    const url1 = decrypt(ENCRYPTED_PHOTOS[0], userPattern);
+    // Декодуємо через двошаровий дешифратор
+    const url1 = decryptDoubleBase64(ENCRYPTED_PHOTOS[0], userPattern);
     
     if (url1 && url1.startsWith('http')) {
         document.getElementById(`photo-1`).src = url1;
         for (let i = 1; i < 8; i++) {
-            document.getElementById(`photo-${i+1}`).src = decrypt(ENCRYPTED_PHOTOS[i], userPattern);
+            document.getElementById(`photo-${i+1}`).src = decryptDoubleBase64(ENCRYPTED_PHOTOS[i], userPattern);
         }
-        document.getElementById('photo-final').src = decrypt(ENCRYPTED_PHOTOS[8], userPattern);
+        document.getElementById('photo-final').src = decryptDoubleBase64(ENCRYPTED_PHOTOS[8], userPattern);
 
         document.getElementById('auth-screen').style.opacity = 0;
         setTimeout(() => {
@@ -132,7 +126,6 @@ function handleEnd(e) {
             updateCounter();
         }, 400);
     } else {
-        // Якщо помилка
         ctx.strokeStyle = '#ff7675';
         ctx.shadowColor = '#ff7675';
         drawLines();
@@ -156,21 +149,27 @@ grid.addEventListener('touchstart', handleStart, { passive: false });
 window.addEventListener('touchmove', handleMove, { passive: false });
 window.addEventListener('touchend', handleEnd);
 
-// Надійний дешифратор
-function decrypt(cipherText, key) {
+// ПРАВИЛЬНИЙ ДВОШАРОВІЙ ДЕШИФРАТОР
+function decryptDoubleBase64(doubleBase64Text, key) {
     try {
-        if (!key || key.length === 0) return null;
-        const cleanCipher = cipherText.trim(); 
-        const decoded = cleanCipher.split('').map((ch, i) => {
+        if (!key || key.length === 0 || !doubleBase64Text) return null;
+        
+        // 1. Знімаємо перший захисний шар Base64, щоб отримати рядок XOR зі спецсимволами
+        const xorStr = atob(doubleBase64Text.trim());
+        
+        // 2. Виконуємо XOR операцію
+        const firstBase64Chars = xorStr.split('').map((ch, i) => {
             return String.fromCharCode(ch.charCodeAt(0) ^ key.charCodeAt(i % key.length));
         }).join('');
-        return decodeURIComponent(atob(decoded));
+        
+        // 3. Знімаємо фінальний шар Base64, щоб отримати чистий URL-рядок
+        return decodeURIComponent(atob(firstBase64Chars));
     } catch (e) { 
         return null; 
     }
 }
 
-// Лічильник знайомства
+// Лічильник знайомства (26 лютого 2026 року)
 const startDate = new Date(2026, 1, 26, 0, 0); 
 function updateCounter() {
     const now = new Date(); const diff = now - startDate;
@@ -180,7 +179,6 @@ function updateCounter() {
     document.getElementById('seconds').innerText = Math.floor((diff % (1000*60)) / 1000);
 }
 
-// Елементи форми з кнопкою "Ні"
 const noBtn = document.getElementById('final-no');
 function escape() {
     const x = Math.random() * (window.innerWidth - 120);
