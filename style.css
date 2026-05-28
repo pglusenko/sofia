@@ -111,7 +111,7 @@ body {
 
 #final-yes {
     background: linear-gradient(135deg, #fd79a8, #e84393);
-    color: white;
+    color: rgb(14, 2, 2);
     box-shadow: 0 4px 20px rgba(253, 121, 168, 0.4);
 }
 
@@ -228,7 +228,7 @@ body {
 .date-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
-    color: #a4b0be;
+    color: #0d59b1;
     margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -244,13 +244,13 @@ body {
 .time-highlight {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
-    color: #ffffff;
+    color: #1ebb5f;
     opacity: 0.8;
 }
 
 .counter-title {
     font-size: 1.1rem;
-    color: #dfe6e9;
+    color: #1a79a1;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -275,13 +275,13 @@ body {
     font-family: 'Comfortaa', cursive;
     font-size: 1.3rem;
     font-weight: bold;
-    color: white;
+    color: rgb(10, 1, 1);
 }
 
 .counter-box label {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.6rem;
-    color: #b2bec3;
+    color: #18769e;
     margin-top: 4px;
     text-transform: uppercase;
 }
