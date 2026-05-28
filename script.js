@@ -170,7 +170,7 @@ function decryptDoubleBase64(doubleBase64Text, key) {
 }
 
 // Лічильник знайомства (26 лютого 2026 року)
-const startDate = new Date(2026, 2, 26, 23, 04); 
+const startDate = new Date(2026, 1, 26, 23, 04); 
 function updateCounter() {
     const now = new Date(); const diff = now - startDate;
     document.getElementById('days').innerText = Math.floor(diff / (1000*60*60*24));
