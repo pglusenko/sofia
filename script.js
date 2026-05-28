@@ -6,11 +6,11 @@ const ENCRYPTED_PHOTOS = [
   "Uzd\bR{t\u0001xK\u000fKPwtBn\u0000\u000fNk\u0001A[PjxTR^wAV\\dTS]hBm\u0000\u000fL}\u0000{\u0004x\u0002pi|f]]QY\u0003Ig_RCe\u0003t\u000bb\u0000p\u0003VtU\tgdAce\u0000^Ugt\u0001Oy^^o}d\bM`H^\neXk\\Qu`oP{Q\u0007Wfd\n`^sbgY\u0002@~tU\\gjluRe\u0000qff|b _wqbedt|vAFQX`Wb^]~{u\u000eBdt\u0000GVt\u000eLkv\f\u0004fw\u000fW~voyUYdsUeIgQf|q|XZC{tRAR^o]U\u0002\u0003\n}dMdad\u000eAe_QFWtxPS_h\u0002ngdI|u`Na^tN~wo\u0003Wf{OU\u0003o[eY\u0007VakZ\u0004zH{LPw|@yHwLRJ\bBVK\u0007VSg\u0000_PjdWUkw[WX\u0006O",
   "Uzd\bR{t\u0001xK\u000fKPwtBn\u0000\u000fNk\u0001A[PjxTR^wAV\\dTS]hBm\u0000\u000fL}\u0000{\u0004x\u0002pi|f]]QY\u0003`kIw@y^\u000f~kgU~U\\`AP]R\u0007WwltSX Fb\u0001Q\bUdtNUv|Ph\u0002saeHpiTkkbm^t\nbv\bOz\u0000|wb\u0003Qq`d`Ne{Q\u0001V\u0000|p|]VOW\u0003lzUus\u0004PuY\rgtQ\\e^F@ceICP\u0000p\fgfI~ea\u0007\bcIc\u0007zYdr~kZ\u0007Ua\u0007\tT_IcW\u0001`W~{Qbne`vb\u0001kzQgFYe\u0003I^W\u0002lK|ucpVwpIUuIr{fx@Rp\bCWYxIPt [cgNjakZ\u0002zfQLPwZO{a\u0007B}d\fAxeRLa\u0001 \u0006Pu^\tR\u0001oNdfw\u0005",
   "Uzd\bR{t\u0001xK\u000fKPwtBn\u0000\u000fNk\u0001A[PjxTR^wAV\\dTS]hBm\u0000\u000fL}\u0000{\u0004x\u0002pi|f]]QY\u000f{k\u0002QAawdWgXofna\u0007HdZ\t\u0007gXR\f|w fWY`lk\u0001w_fw\u0002AbXUee\u0000^McfoVWeZidvQ@PzdMSuUZn\u0000Y\f \u0003s\u0002Wt|\u000ebvUDyt|uPXcs`t|\nkYosgz`|deQ^UHl\b \u0001\bpagFj|f\b\u0005ng`WeX\u0000`ntlKbZ\bBct^bSeogQu\u0003N \u0002{caHp\u000bT^ [a\u0003\u000fPeIQcz_E\bc\u0002]B`vRJUul\u0002e\u0000pJbt\u0000qV\u0000ZjakZ\u0004zH{LPw|@yHwLRJ\bBVK\u0007VSg\u0000_PjdWUkw[WX\u0006O",
-  "Uzd\bR{t\u0001xK\u000fKPwtBn\u0000\u000fNk\u0001A[PjxTR^wAV\\dTS]hBm\u0000\u000fL}\u0000{\u0004x\u0002pi|f]]QY\u000e\nTdkczfd P{{\u0001`gNq~v pWjd\rkIco`w`zdwoqf\u0002NKUvsQb\u0003Rlft\u0000\u0005ye^mcfIebfp`kkUxy^` `\u0001cszXdoRv\fxb\u0002F^c^AFf\u0001x}h_s^PdZkktssQa\u0007ve]kybe^zk\u0001c]VYxAgd\u0000a`\u0003l{dt\u0001\u0002Wtlv}fsb`j^ efopW_RKSYs ngd{RgsAb\u0002gAPY|M`\u0002Zufu\u0000\u0006{vdr \u0000oAe\u0001ljakZ\u0004zH{LPw|@yHwLRJ\bBVK\u0007VSg\u0000_PjdWUkw[WX\u0006O",
-  "Uzd\bR{t\u0001xK\u000fKPwtBn\u0000\u000fNk\u0001A[PjxTR^wAV\\dTS]hBm\u0000\u000fL}\u0000{\u0004x\u0002pi|f]]QY\u0002Ag\u0003\u0000@UgBtS\u0003\u0001\u0006W\\{\t}ksf`X|bkvQ\u0007P\u0003ZUPvUYyf^B ] Za\u0003l\bkds[U\u0003Fbd^wygfxuR_w~P\u0000|vPgQA`_cB~v]dy\u0000pNTkt\u0006`_Z\u000befU@zw^P|J\bCb\u0003t{SYQpfg`q IsDnftARt\u0000\u0004{zZ dkZ@PHRLR^ cV\u0003|Wdgh@cuA@dfo\u0006`YdH|d Ccg|HUXlCW\u0002\u0003{|f\u0001OVg|PS]k\\nelVakZ\u0002zfQLPwZO{a\u0007B}d\fAxeRLa\u0001 \u0006Pu^\tR\u0001oNdfw\u0005",
-  "Uzd\bR{t\u0001xK\u000fKPwtBn\u0000\u000fNk\u0001A[PjxTR^wAV\\dTS]hBm\u0000\u000fL}\u0000{\u0004x\u0002pi|f]]QY\u000fOe\u0001IBn\\``|e rVu{@}kU\u0004cYpWRv \\UXlj|tw~zHps`Y XUX^UU^k_fg|\f|\u0001suzg\u0003\fSIQnzg\u0003TbkUdy_^we\u0001UXW\u0003tAb^o\u0007mfRKi\u0003`@y\u0002x}dIQOfeRAhXMNeYBzk\u0003Usf\u0001t kIwrm\\drUtwdPK\u0007^`\u0003ofU\u0003Q@UIco{q\u0007@U^\f\u0001g_\u000fJbwQ\u0003ee\u0003iUg{\u0001V\u0002lj}kh\u0005W\u0000lwPwsenY\u000fzakZ\u0002zfQLPwZO{a\u0007B}d\fAxeRLa\u0001 \u0006Pu^\tR\u0001oNdfw\u0005",
-  "Uzd\bR{t\u0001xK\u000fKPwtBn\u0000\u000fNk\u0001A[PjxTR^wAV\\dTS]hBm\u0000\u000fL}\u0000{\u0004x\u0002pi|f]]QY\u0007PkgoOVYZl|kQVQttsP\u0003c@njFHfXh\u0002gzg@g\u0001M``tpkRdwyWt^Wd\u0002t\u0003z\u0002xlSXUmf\u0000^|U\u0000kbg^FI|kIpa_\u000focw|\u0004yY` UJ\bxV_lWd_\u0001Nm\u0000\u000f|hX ty\u0003^B`gspQ_lYTwsgbHZTfdwXVwA\rbek\u0002adZTd]IuejFNed |m\u0002YAh\u0000Uoa^\u000e\r`ewEm\\RJ\u0001N\u0004WHx}Pt\u0001Ca_lIftodV_RVakZ\u0004zH{LPw|@yHwLRJ\bBVK\u0007VSg\u0000_PjdWUkw[WX\u0006O",
-  "Uzd\bR{t\u0001xK\u000fKPwtBn\u0000\u000fNk\u0001A[PjxTR^wAV\\dTS]hBm\u0000\u000fL}\u0000{\u0004x\u0002pi|f]]QY\u000f~UX\fCnwdW`kl\u0005feZ\r~dM]nw\u0002\tbe{@z\u0000\u000flkeQge_BMPIx\u0007cgBYT_wEy_xKS]Qmfe\u0006O`kl\u0005fdg\u000bUXssydZ~UtI]gXxv Xs`agBzd\u0003\bDa^| cYs\u0007b_Z\refh\u0006ye|wP\u0001]ugt]@d_]ef\u0002xI|IsefzRJi\u0003Moegl| ^\u0000_ne`hbu\u0000}ytY\tkwtMWHdoi\u0001wdztdjk\u0001M^V\u0000lP`]Q\u0001a\u0003^zakZ\u0004zH{LPw|@yHwLRJ\bBVK\u0007VSg\u0000_PjdWUkw[WX\u0006O"
+  "Uzd\bR{t\u0001xK\u000fKPwtBn\u0000\u000fNk\u0001A[PjxTR^wAV\\dTS]hBm\u0000\u000fL}\u0000{\u0004x\u0002pi|f]]QY\u000e\nTdkczfd P{{\u0001`gNq~v pWjd\rkIco`w`zdwoqf\u0002NKUvsQb\u0003Rlft\u0000\u0005ye^mcfIebfp`kkUxy^` `\u0001cszXdoRv\fxb\u0002F^c^AFf\u0001x}h_s^PdZkktssQa\u0007ve]kybe^zk\u0001c]VYxAgd\u0000a`\u0003l{dt\u0001\u0002Wtlv}fsb`j^ efopW_RKSYs ngd{RgsAb\u0002gAPY|M`\u0002Zufu\u0000\u0006{vdr\u0000oAe\u0001ljakZ\u0004zH{LPw|@yHwLRJ\bBVK\u0007VSg\u0000_PjdWUkw[WX\u0006O",
+  "Uzd\bR{t\u0001xK\u000fKPwtBn\u0000\u000fNk\u0001A[PjxTR^wAV\\dTS]hBm\u0000\u000fL}\u0000{\u0004x\u0002pi|f]]QY\u0002Ag\u0003\u0000@UgBtS\u0003\u0001\u0006W\\{\t}ksf`X|bkvQ\u0007P\u0003ZUPvUYyf^B]Za\u0003l\bkds[U\u0003Fbd^wygfxuR_w~P\u0000|vPgQA`_cB~v]dy\u0000pNTkt\u0006`_Z\u000befU@zw^P|J\bCb\u0003t{SYQpfg`qIsDnftARt\u0000\u0004{zZdkZ@PHRLR^cV\u0003|Wdgh@cuA@dfo\u0006`YdH|dCcg|HUXlCW\u0002\u0003{|f\u0001OVg|PS]k\\nelVakZ\u0002zfQLPwZO{a\u0007B}d\fAxeRLa\u0001\u0006Pu^\tR\u0001oNdfw\u0005",
+  "Uzd\bR{t\u0001xK\u000fKPwtBn\u0000\u000fNk\u0001A[PjxTR^wAV\\dTS]hBm\u0000\u000fL}\u0000{\u0004x\u0002pi|f]]QY\u000fOe\u0001IBn\\``|erVu{@}kU\u0004cYpWRv\\UXlj|tw~zHps`YXUX^UU^k_fg|\f|\u0001suzg\u0003\fSIQnzg\u0003TbkUdy_^we\u0001UXW\u0003tAb^o\u0007mfRKi\u0003`@y\u0002x}dIQOfeRAhXMNeYBzk\u0003Usf\u0001tkIwrm\\drUtwdPK\u0007^`\u0003ofU\u0003Q@UIco{q\u0007@U^\f\u0001g_\u000fJbwQ\u0003ee\u0003iUg{\u0001V\u0002lj}kh\u0005W\u0000lwPwsenY\u000fzakZ\u0002zfQLPwZO{a\u0007B}d\fAxeRLa\u0001\u0006Pu^\tR\u0001oNdfw\u0005",
+  "Uzd\bR{t\u0001xK\u000fKPwtBn\u0000\u000fNk\u0001A[PjxTR^wAV\\dTS]hBm\u0000\u000fL}\u0000{\u0004x\u0002pi|f]]QY\u0007PkgoOVYZl|kQVQttsP\u0003c@njFHfXh\u0002gzg@g\u0001M``tpkRdwyWt^Wd\u0002t\u0003z\u0002xlSXUmf\u0000^|U\u0000kbg^FI|kIpa_\u000focw|\u0004yY`UJ\bxV_lWd_\u0001Nm\u0000\u000f|hXty\u0003^B`gspQ_lYTwsgbHZTfdwXVwA\rbek\u0002adZTd]IuejFNed|m\u0002YAh\u0000Uoa^\u000e\r`ewEm\\RJ\u0001N\u0004WHx}Pt\u0001Ca_lIftodV_RVakZ\u0004zH{LPw|@yHwLRJ\bBVK\u0007VSg\u0000_PjdWUkw[WX\u0006O",
+  "Uzd\bR{t\u0001xK\u000fKPwtBn\u0000\u000fNk\u0001A[PjxTR^wAV\\dTS]hBm\u0000\u000fL}\u0000{\u0004x\u0002pi|f]]QY\u000f~UX\fCnwdW`kl\u0005feZ\r~dM]nw\u0002\tbe{@z\u0000\u000flkeQge_BMPIx\u0007cgBYT_wEy_xKS]Qmfe\u0006O`kl\u0005fdg\u000bUXssydZ~UtI]gXxvXs`agBzd\u0003\bDa^|cYs\u0007b_Z\refh\u0006ye|wP\u0001]ugt]@d_]ef\u0002xI|IsefzRJi\u0003Moegl|^\u0000_ne`hbu\u0000}ytY\tkwtMWHdoi\u0001wdztdjk\u0001M^V\u0000lP`]Q\u0001a\u0003^zakZ\u0004zH{LPw|@yHwLRJ\bBVK\u0007VSg\u0000_PjdWUkw[WX\u0006O"
 ];
 
 let activeNodes = [];
@@ -21,16 +21,14 @@ const ctx = canvas.getContext('2d');
 const grid = document.getElementById('pattern-grid');
 const nodes = document.querySelectorAll('.pattern-node');
 
-// Динамічно адаптуємо внутрішній розмір канвасу під CSS
 function resizeCanvas() {
     const rect = grid.getBoundingClientRect();
     canvas.width = rect.width;
     canvas.height = rect.height;
 }
 window.addEventListener('resize', resizeCanvas);
-resizeCanvas(); // Викликаємо один раз при старті
+resizeCanvas();
 
-// Малювання ліній
 function drawLines(mouseX, mouseY) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     if (activeNodes.length === 0) return;
@@ -60,7 +58,7 @@ function drawLines(mouseX, mouseY) {
 }
 
 function handleStart(e) {
-    resizeCanvas(); // Гарантуємо точність розмірів перед малюванням
+    resizeCanvas();
     isTracking = true;
     handleMove(e);
 }
@@ -84,10 +82,22 @@ function handleMove(e) {
     drawLines(clientX, clientY);
 }
 
+// =================================================================
+// ЗМЕНШЕНИЙ РАДІУС ЗАХВАТУ (ОБЧИСЛЕННЯ ВІДСТАНІ ДО ЦЕНТРУ ТОЧКИ)
+// =================================================================
 function getNodeFromPoint(x, y) {
+    const CAPTURE_RADIUS = 25; // Радіус захвату в пікселях. Зменшуй/збільшуй це значення для точності
+    
     for (let node of nodes) {
         const rect = node.getBoundingClientRect();
-        if (x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom) {
+        // Знаходимо центр кожної точки на екрані
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        
+        // Математична відстань між пальцем та центром круга
+        const distance = Math.hypot(x - centerX, y - centerY);
+        
+        if (distance <= CAPTURE_RADIUS) {
             return node;
         }
     }
@@ -95,7 +105,7 @@ function getNodeFromPoint(x, y) {
 }
 
 // =================================================================
-// 2. ДИНАМІЧНЕ РОЗШИФРУВАННЯ
+// 2. ПЕРЕВІРКА КЛЮЧА ОДРАЗУ ПРИ ВІДПУСКАННІ ПАЛЬЦЯ
 // =================================================================
 function handleEnd() {
     if (!isTracking) return;
@@ -119,6 +129,7 @@ function handleEnd() {
             updateCounter();
         }, 400);
     } else {
+        // Якщо помилка — підсвічуємо червоним
         ctx.strokeStyle = '#ff7675';
         ctx.shadowColor = '#ff7675';
         drawLines();
@@ -134,11 +145,13 @@ function resetLock() {
     document.getElementById('error-message').classList.add('hidden');
 }
 
+// Слухачі подій перенесені на grid та window для максимальної чутливості
 grid.addEventListener('mousedown', handleStart);
 window.addEventListener('mousemove', handleMove);
 window.addEventListener('mouseup', handleEnd);
+
 grid.addEventListener('touchstart', handleStart);
-window.addEventListener('touchmove', handleMove);
+window.addEventListener('touchmove', handleMove, { passive: false });
 window.addEventListener('touchend', handleEnd);
 
 // Дешифратор
