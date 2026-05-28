@@ -60,19 +60,37 @@ function handleStart(e) {
 
 function handleMove(e) {
     if (!isTracking) return;
+    
+    // Запобігаємо стандартному скролу екрана, коли Софія веде пальцем по сітці
+    if (e.touches) e.preventDefault(); 
+    
     const clientX = e.touches ? e.touches[0].clientX : e.clientX;
     const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-    const elem = document.elementFromPoint(clientX, clientY);
-    const node = elem ? elem.closest('.pattern-node') : null;
+    
+    // Точний пошук ноди під пальцем/мишкою
+    const node = getNodeFromPoint(clientX, clientY);
     
     if (node) {
         if (!activeNodes.includes(node)) {
             activeNodes.push(node);
             node.classList.add('active');
-            if (navigator.vibrate) navigator.vibrate(10);
+            if (navigator.vibrate) navigator.vibrate(15); // Вібрація при з'єднанні
         }
     }
+    
     drawLines(clientX, clientY);
+}
+
+// Допоміжна функція: вираховує, чи потрапив палець у радіус круга точки
+function getNodeFromPoint(x, y) {
+    for (let node of nodes) {
+        const rect = node.getBoundingClientRect();
+        // Перевіряємо, чи координати x/y знаходяться всередині блоку точки
+        if (x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom) {
+            return node;
+        }
+    }
+    return null;
 }
 
 // =================================================================
